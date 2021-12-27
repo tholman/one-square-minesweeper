@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fafafa;
+  font-family: "Segoe UI", sans-serif;
+  font-size: 11px;
+  background-color: rgb(58, 110, 165);
+}
+
+.minesweeper {
+  border-width: 1px;
+  border-style: solid;
+  border-image: initial;
+  border-color: rgb(212, 208, 200) rgb(64, 64, 64) rgb(64, 64, 64) rgb(212, 208, 200);
+}
+
+.minesweeper-inner {
+  border-width: 1px;
+  border-style: solid;
+  border-image: initial;
+  border-color: rgb(255, 255, 255) rgb(128, 128, 128) rgb(128, 128, 128) rgb(255, 255, 255);
+  background-color: rgb(212, 208, 200);
+  padding: 1px;
+}
+
+header {
+  background: linear-gradient(to right, rgb(11, 36, 106), rgb(166, 202, 240));
+  color: rgb(255, 255, 255);
+  display: flex;
+  font-weight: 700;
+  height: 18px;
+  padding: 1px 2px;
+  align-items: center;
+}
+
+header img {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+.game {
+  padding: 6px;
+  background-color: rgb(192, 192, 192);
+  border-width: 3px 0px 0px 3px;
+  border-style: solid;
+  border-color: rgb(255, 255, 255);
+}
+
+section {
+  border-width: 2px;
+  border-style: solid;
+  border-image: initial;
+  border-color: rgb(128, 128, 128) rgb(255, 255, 255) rgb(255, 255, 255) rgb(128, 128, 128);
+}
+
+.scoring {
+  margin-bottom: 6px
+}
+
+.scoreboard {
+  display: flex;
+  align-items: flex-end;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding: 4px 5px;
+}
+
+.panel {
+  border-width: 1px;
+  border-style: solid;
+  border-image: initial;
+  border-color: rgb(128, 128, 128) rgb(255, 255, 255) rgb(255, 255, 255) rgb(128, 128, 128);
+  background-color: rgb(0, 0, 0);
+  gap: 2px;
+  padding: 2px;
+  display: flex;
+}
+
+.face-button {
+  border: none;
+  padding: 0px;
+  width: 26px;
+  height: 28px;
+  background: none;
+  margin: 0 2px;
+  background-image: url('./img/face.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.board-items {
+  background-color: rgb(123 123 123 / 4%);
+  user-select: none;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.one-square {
+  width: 16px;
+  height: 16px;
+  background-image: url('./img/cell-covered.svg')
+}
+
+.one-square:active {
+  background-image: url('./img/cell-0.svg')
+}
+
+.exploded {
+  pointer-events: none;
+  background-image: url('./img/mine-exploded.svg')
+}
+
+.flagged {
+  pointer-events: none;
+  background-image: url('./img/cell-flagged.svg')
+}
+
+.face-button:active {
+  background-image: url('./img/face-active.svg')
+}
+
+.face-button-clicking {
+  background-image: url('./img/face-clicking.svg')
+}
+
+.face-button-won {
+  background-image: url('./img/face-won.svg')
+}
+
+.face-button-dead {
+  background-image: url('./img/face-lost.svg')
+}

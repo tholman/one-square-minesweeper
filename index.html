@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>One Square Minesweeper</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💣</text></svg>"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body >
+    <div class="minesweeper">
+      <div class="minesweeper-inner">
+        <header class="header"><img alt="Mine" src="./img/minesweeper-icon.png" class="icon">Minesweeper</header>
+        <div class="game">
+          <section class="scoring">
+            <div class="scoreboard">
+              <div class="panel left">
+                <img src="./img/display-digit-0.svg" />
+                <img src="./img/display-digit-0.svg" />
+                <img class="digit" src="./img/display-digit-1.svg" />
+              </div>
+              <button class="face-button">
+              </button>
+              <div class="panel right">
+                <img class="timer-0" src="./img/display-digit-0.svg" />
+                <img class="timer-1" src="./img/display-digit-0.svg" />
+                <img class="timer-2" src="./img/display-digit-0.svg" />
+              </div>
+            </div>
+          </section>
+          <section class="board">
+            <div class="board-items">
+              <div class="one-square"></div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
