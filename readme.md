@@ -1,6 +1,6 @@
 # One Square Minesweeper
 
-A game of minesweeper that is easy to complete (or lose).
+A game of minesweeper that is easy to complete (or lose). Play at [https://onesquareminesweeper.com](https://onesquareminesweeper.com).
 
 ### Instructions
 - Right click (or crtl + click) is flag
