@@ -1,6 +1,3 @@
-
-
-
 (() => {
   const digit = document.querySelector(".digit");
   const timer0 = document.querySelector(".timer-0");
@@ -10,7 +7,7 @@
   const oneSquare = document.querySelector(".one-square");
 
   let startTime, animationFrame;
-  let last = ''
+  let last = "";
 
   startTimer();
 

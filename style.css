@@ -29,14 +29,16 @@ body {
   border-width: 1px;
   border-style: solid;
   border-image: initial;
-  border-color: rgb(212, 208, 200) rgb(64, 64, 64) rgb(64, 64, 64) rgb(212, 208, 200);
+  border-color: rgb(212, 208, 200) rgb(64, 64, 64) rgb(64, 64, 64)
+    rgb(212, 208, 200);
 }
 
 .minesweeper-inner {
   border-width: 1px;
   border-style: solid;
   border-image: initial;
-  border-color: rgb(255, 255, 255) rgb(128, 128, 128) rgb(128, 128, 128) rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255) rgb(128, 128, 128) rgb(128, 128, 128)
+    rgb(255, 255, 255);
   background-color: rgb(212, 208, 200);
   padding: 1px;
 }
@@ -69,11 +71,12 @@ section {
   border-width: 2px;
   border-style: solid;
   border-image: initial;
-  border-color: rgb(128, 128, 128) rgb(255, 255, 255) rgb(255, 255, 255) rgb(128, 128, 128);
+  border-color: rgb(128, 128, 128) rgb(255, 255, 255) rgb(255, 255, 255)
+    rgb(128, 128, 128);
 }
 
 .scoring {
-  margin-bottom: 6px
+  margin-bottom: 6px;
 }
 
 .scoreboard {
@@ -88,7 +91,8 @@ section {
   border-width: 1px;
   border-style: solid;
   border-image: initial;
-  border-color: rgb(128, 128, 128) rgb(255, 255, 255) rgb(255, 255, 255) rgb(128, 128, 128);
+  border-color: rgb(128, 128, 128) rgb(255, 255, 255) rgb(255, 255, 255)
+    rgb(128, 128, 128);
   background-color: rgb(0, 0, 0);
   gap: 2px;
   padding: 2px;
@@ -102,7 +106,7 @@ section {
   height: 28px;
   background: none;
   margin: 0 2px;
-  background-image: url('./img/face.png');
+  background-image: url("./img/face.png");
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -119,35 +123,35 @@ section {
 .one-square {
   width: 16px;
   height: 16px;
-  background-image: url('./img/cell-covered.png')
+  background-image: url("./img/cell-covered.png");
 }
 
 .one-square:active {
-  background-image: url('./img/cell-0.png')
+  background-image: url("./img/cell-0.png");
 }
 
 .exploded {
   pointer-events: none;
-  background-image: url('./img/mine-exploded.png')
+  background-image: url("./img/mine-exploded.png");
 }
 
 .flagged {
   pointer-events: none;
-  background-image: url('./img/cell-flagged.png')
+  background-image: url("./img/cell-flagged.png");
 }
 
 .face-button:active {
-  background-image: url('./img/face-active.png')
+  background-image: url("./img/face-active.png");
 }
 
 .face-button-clicking {
-  background-image: url('./img/face-clicking.png')
+  background-image: url("./img/face-clicking.png");
 }
 
 .face-button-won {
-  background-image: url('./img/face-won.png')
+  background-image: url("./img/face-won.png");
 }
 
 .face-button-dead {
-  background-image: url('./img/face-lost.png')
+  background-image: url("./img/face-lost.png");
 }
