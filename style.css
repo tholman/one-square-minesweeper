@@ -1,11 +1,17 @@
 * {
   box-sizing: border-box;
+  image-rendering: pixelated;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
+}
+
+.preload {
+  width: 0;
+  visibility: hidden;
 }
 
 body {
@@ -16,7 +22,7 @@ body {
   background: #fafafa;
   font-family: "Segoe UI", sans-serif;
   font-size: 11px;
-  background-color: rgb(58, 110, 165);
+  background-color: rgb(0, 134, 137);
 }
 
 .minesweeper {
@@ -96,7 +102,7 @@ section {
   height: 28px;
   background: none;
   margin: 0 2px;
-  background-image: url('./img/face.svg');
+  background-image: url('./img/face.png');
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -113,35 +119,35 @@ section {
 .one-square {
   width: 16px;
   height: 16px;
-  background-image: url('./img/cell-covered.svg')
+  background-image: url('./img/cell-covered.png')
 }
 
 .one-square:active {
-  background-image: url('./img/cell-0.svg')
+  background-image: url('./img/cell-0.png')
 }
 
 .exploded {
   pointer-events: none;
-  background-image: url('./img/mine-exploded.svg')
+  background-image: url('./img/mine-exploded.png')
 }
 
 .flagged {
   pointer-events: none;
-  background-image: url('./img/cell-flagged.svg')
+  background-image: url('./img/cell-flagged.png')
 }
 
 .face-button:active {
-  background-image: url('./img/face-active.svg')
+  background-image: url('./img/face-active.png')
 }
 
 .face-button-clicking {
-  background-image: url('./img/face-clicking.svg')
+  background-image: url('./img/face-clicking.png')
 }
 
 .face-button-won {
-  background-image: url('./img/face-won.svg')
+  background-image: url('./img/face-won.png')
 }
 
 .face-button-dead {
-  background-image: url('./img/face-lost.svg')
+  background-image: url('./img/face-lost.png')
 }
