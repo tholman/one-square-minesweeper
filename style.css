@@ -136,7 +136,13 @@ section {
 }
 
 .flagged {
-  pointer-events: none;
+  /* 
+   *  If we set pointer-events to none here, the logic to disable the context menu
+   *  on right clicking the one square fails, because this class takes effect before
+   *  the event fires, causing the contextmenu event to bubble to the parent div
+   *
+   *  @see https://github.com/tholman/one-square-minesweeper/issues/1
+   */
   background-image: url("./img/cell-flagged.png");
 }
 

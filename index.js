@@ -7,7 +7,6 @@
   const oneSquare = document.querySelector(".one-square");
 
   let startTime, animationFrame;
-  let last = "";
 
   startTimer();
 
